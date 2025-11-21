@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">praktik6</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="name_lengkap">NAMA LENGKAP</string>
+    <string name="jenis_kelamin">JENIS KELAMIN</string>
+    <string name="alamat">ALAMAT</string>
+    <string name="tampil">Tampilan Data</string>
+    <string name="home">Form Isian</string>
 </resources>
