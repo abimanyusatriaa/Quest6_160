@@ -26,17 +26,21 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 import com.example.praktik6.R
+import com.example.praktik6.model.Siswa
 
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TampilData(
+    //edit 1
+    statusUiSiswa: Siswa,
     onBackBtnClick: () -> Unit
 ) {
+    //edit 2
     val items = listOf(
-        Pair(first = stringResource(id = R.string.name_lengkap), second = "Contoh Nama"),
-        Pair(first = stringResource(id = R.string.jenis_kelamin), second = "Lainnya"),
-        Pair(first = stringResource(id = R.string.alamat), second = "Yogyakarta")
+        Pair(first = stringResource(id = R.string.name_lengkap), second = statusUiSiswa.nama),
+        Pair(first = stringResource(id = R.string.jenis_kelamin), second = statusUiSiswa.gender),
+        Pair(first = stringResource(id = R.string.alamat), second = statusUiSiswa.alamat)
     )
 
     Scaffold(
